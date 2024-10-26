@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #080808;
+    animation: fadeIn 1s ease-in-out;
+  }
+  .form-control {
+    background-color: #ECF0F1;
+    color: #000000;
+    border: 1px solid #34495E;
+    border-radius: 25PX;
+  }
+  .form-control:focus {
+    color: #0a0a0a;
+  }
+  .btn-primary {
+    background-color: #3498DB;
+    border-color: #3498DB;
+  }
+  .btn-secondary {
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+  }
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .product-card img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .card {
+    text-align: center;
+  }
+  #products {
+    max-height: 80vh; /* Altura máxima para mostrar 9 tarjetas */
+    overflow-y: scroll;
+  }
+  header {
+    background: linear-gradient(45deg, #1ABC9C, #3498DB);
+    color: #ECF0F1;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
+  
