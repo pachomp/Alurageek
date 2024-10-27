@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('productForm');
   const productList = document.getElementById('products');
+  const noProductsMessage = document.getElementById('noProductsMessage');
   let productCount = 0;
 
   form.addEventListener('submit', async (event) => {
@@ -71,13 +72,25 @@ document.addEventListener('DOMContentLoaded', () => {
       productCard.querySelector('.delete-btn').addEventListener('click', () => {
         productCard.remove();
         productCount--;
+        adjustProductDisplay();
       });
 
       productList.appendChild(productCard);
       productCount++;
+      adjustProductDisplay();
 
     } catch (error) {
       alert(error.message);
     }
   }
+
+  function adjustProductDisplay() {
+    if (productCount === 0) {
+      noProductsMessage.style.display = 'block';
+    } else {
+      noProductsMessage.style.display = 'none';
+    }
+  }
+
+  adjustProductDisplay(); // Verifica si hay productos al cargar la página
 });

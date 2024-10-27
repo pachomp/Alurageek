@@ -39,8 +39,13 @@
     text-align: center;
   }
   #products {
-    max-height: 80vh; /* Altura máxima para mostrar 9 tarjetas */
+    max-height: 60vh; /* Altura máxima para mostrar 9 tarjetas */
     overflow-y: scroll;
+  }
+  #noProductsMessage{
+    font-family: 'montserrat', sans-serif;
+    color: #1ABC9C;
+    font-weight: bold;
   }
   header {
     background: linear-gradient(45deg, #1ABC9C, #3498DB);
@@ -64,5 +69,17 @@
     to {
       opacity: 1;
     }
-  } 
+  }
+  footer {
+    background: linear-gradient(45deg, #1ABC9C, #3498DB);
+    color: #ECF0F1;
+    padding: 10px 0;
+    text-align: center;
+  }
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
   
